@@ -1,6 +1,12 @@
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/nongsanmul?serverTimezone=UTC&characterEncoding=UTF-8
+    username: nongsanmul
+    password: nongsanmul
   profiles:
-#    - db
+    include:
+      - oauth
   servlet:
     multipart:
       max-file-size: 1MB
@@ -14,11 +20,7 @@ spring:
         default_batch_fetch_size: 30
         format_sql: true
     show-sql: true
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/nongsanmul?serverTimezone=UTC&characterEncoding=UTF-8
-    username: nongsanmul
-    password: nongsanmul
+
 
 
 

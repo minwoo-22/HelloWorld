@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>login Page</title>
+</head>
+<style>
+	 #background{
+	 	position: absolute;
+	 	z-index: -1;
+	 }
+	 #wrap {
+	 	position: relative; left: calc(100%/2.6); top: 30px;
+	 	transform: translate(-60%,0%);
+	 	z-index: 1;
+	 	width: 400px;
+	 	height: 30px;
+	}
+	#circle {
+		border-radius: 50%;
+		background-color: white;
+		z-index: 1;
+		position: relative; left: 200px; top:100px;
+		height: 400px;
+	}
+	#etcContainer {
+	 	position: relative; left: 67px; top: 50px;
+	}
+	#head_img {
+	 	position: relative; left:60px; top: -10px;
+	 	width: 150px;
+	 	height: 150px;
+	}
+    #loginBtn {
+        transform: translateX(-17%);
+        border: 1px solid black;
+        position: relative;
+        padding-left: 90px;
+    }
+    #google_btn {
+        width: 200px;
+        height: 50px;
+        position: relative;
+    }
+</style>
+<body>
+<script>
+
+
+</script>
+<div id="wrap">
+    <div id="background"><img src="/images/background.png" width=800px; height=600px;></div>
+    <div id="circle">
+        <div id="etcContainer">
+            <img id="head_img" src="/images/helloworld.png" alt="hello world">
+            <div id="loginBtn">
+                <a href="/oauth2/authorization/google"> <img id="google_btn" src="/images/google_btn_signin1.png" onmouseover="this.src='/images/google_btn_signin2.png'"
+                     onmouseout="this.src='/images/google_btn_signin1.png'"> </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

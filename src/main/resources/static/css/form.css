@@ -1,0 +1,158 @@
+@charset "UTF-8";
+#wrap {  /* 가장 바깥 부분을 둘러싸고 있는 div */
+	position: absolute;
+	left: 50%;    /* 가운데 정렬하기 위한 css */
+	transform: translate(-50%);
+	top: 50px;
+	border: 1px solid black;
+	background-color: #DDF1F5;
+}
+
+#wrap1 {  /* 가장 바깥 부분을 덮고 있는 div */
+	padding: 20px;
+	white-space: nowrap;
+	position: relative;
+}
+
+.box1 {  /* left1과 right1 공통 부분 */
+	position: relative;
+	background-color: #8AC4D0;
+	height: 600px;
+	display: inline-block;
+	border-radius: 15px;
+	z-index: 1;
+	border: 1px solid #767C7E;
+}
+
+#left1 { /* box1의 좌측 div */
+	width: 300px;
+	border-right: none;
+}
+
+#right1 { /* box1의 우측 div */
+	left: -6px;
+	width: 700px;
+	border-left: none;
+}
+
+.box2 {  /* left2, right2 공통 부분 */
+	position: absolute;
+	display: inline-block;
+	border-radius: 15px;
+	height: 550px;
+	background-color: green;
+	margin-top: 20px;
+	left: 20px;
+	background-color: #EEEEEE;
+	z-index: 1;
+}
+
+#left2 { /* box2의 좌측 div */
+	width: 270px;
+	border-right-color: #EEEEEE;
+	left: 31px;
+}
+
+#right2 { /* box2의 우측 div */
+	left: 0px;
+	width: 670px;
+	border-left-color: #EEEEEE;
+}
+
+#left3 {  /* 페이지 내용이 올라가는 좌측 div */
+	left: 7px;
+	width: 250px;
+}
+#right3 {  /* 페이지 내용이 올라가는 우측 div */
+	left: 5px;
+	top: 10px;
+	width: 630px;
+}
+.box3 {  /* left3과 right3의 공통 부분 */
+	position: relative;
+	background-color: white;
+	top: 30px;
+	border: 1px solid #767C7E;
+	border-radius: 15px;
+	height: 480px;
+}
+#today {  /* today부분 */
+	width: 200px;
+	text-align: center;
+	position: relative;
+	top: 25px;	
+	left: 35px;
+	font-weight: bold;
+	font-size: 10px;
+}
+#todayIs {  /* TODAY IS... 부분 */
+	position: relative;
+	border: 1px solid #767C7E;
+	border-radius: 5px;
+	height: 30px;
+	width: 180px;
+	left: 15px;
+	top: 10px;
+	padding-top: 2px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #10C0D5;
+}
+#character {  /* 좌측에 캐릭터 이미지 */
+	width: 250px;
+	height: 200px;
+	position: relative;
+	top: 40px;
+}
+#title {  /* 최근게시물 글자 부분 */
+	border-bottom: 1px solid black;
+	width: 550px;
+	height: 35px;
+	margin-left: 30px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #10C0D5;
+}
+#nickname {  /* OO님의 홈페이지입니다. */
+	font-size: 23px;
+	font-weight: 600;
+	margin-left: 15px;
+	padding-top: 8px;
+	color: #46D5D4;
+}
+#navigation {  /* 메뉴바 */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: -12px;
+	top: 110px;
+	z-index: 1;
+}
+#navigation > li > a {  /* 메뉴바 링크 태그 */
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: #2A9EC8;
+	color: white;
+}
+#openBtnDiv {  /* 메인화면으로 가는 버튼을 감싸고 있는 div */
+	position: relative;
+	left: 510px;
+	bottom: 30px;
+	width: 120px;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-align: center;
+}
+#right3 {
+	top: -25px;
+}
+#helloImg {
+	width: 20px;
+}
