@@ -14,7 +14,7 @@
             rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<script src="resources/js/find_people.js"></script>
+<script src="/js/find_people.js"></script>
 <style>
 /* input 크기, 폰트 지정 */
 .input {
@@ -89,8 +89,8 @@ table {
     <div>
         <h1 id="mfont">사람 찾기</h1>
         <form name="frm" method="post">
-            <p class="label">닉네임으로 검색</p>
-            <input type="text" name="nickname" class="input" placeholder="한글, 영어(대/소), 숫자 가능 (2~10)">
+            <p class="label">이름으로 검색</p>
+            <input type="text" name="name" class="input" placeholder="2글자 이상 입력해주세요.">
             <input type="hidden" name="type" value="findPeople">
             <p id="align">
                 <input type="button" value="검색" class="button" onclick="findPeople_send()">
