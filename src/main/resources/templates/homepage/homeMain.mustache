@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+</head>
+<link href="/css/form.css" rel="stylesheet" type="text/css" />
+<style>
+#navigation>li:first-child>a {  /* 현재 페이지 버튼 스타일 변경 */
+	background-color: white; color: black;
+	border-left: none;
+}
+
+.update {  /* 최근게시물 밑에 사진첩, 게시판 공통 부분 */
+	width: 70px;
+	height: 25px;
+	border: none;
+	border-radius: 7px;
+	text-align: center;
+	margin-left: 40px;
+	font-weight: bold;
+	color: white;
+}
+#newDiary {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #92D1F0;
+}
+#newPhoto {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #F08DB3;
+}
+#newBoard {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #55E5D0;
+}
+#newGuestBook {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #E891F0;
+}
+#homeimage {  /* 오른쪽에 있는 이미지 */
+	width: 500px;
+	margin-left: 70px;
+	margin-top: 50px;
+	height: 200px;
+}
+#searchDiv {  /* 검색창을 감싸고 있는 div */
+	border: 1px solid black;
+	position:relative;
+	top: 30px;
+}
+#newBox {  /* 새로 업데이트된 내용을 감싸고 있는 div */
+	position: relative;
+	left: 30px;
+	margin-top: 10px;
+}
+#newTable {
+	/* white-space: pre-wrap;
+	word-break: break-all; */
+}
+#newTable td {
+
+}
+.newTitle {
+	padding-left: 20px;
+	width: 450px;
+}
+.newTitle a {
+	text-decoration: none;
+	color: orange;
+}
+
+</style>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function main_go() {
+		if (${login == null}) {
+			location.href = "login";
+		} else {
+			location.href = "main";
+		}
+	}
+</script>
+<div id="wrap">
+    <div id="wrap1">
+        <div id="left1" class="box1">
+            <div id="left2" class="box2">
+                <div id="today">
+                    TODAY <span style="color:#EE5D1A; font-size:13px;">9999</span> | TOTAL
+                    <span style="font-size:13px;">9999</span>
+                </div>
+
+                <div id="left3" class="box3">
+                    <div id="todayIs">
+                        TODAY IS...
+                    </div>
+                    <div id="characterbox">
+                        <img id="character" src="/images/character2.jpg" alt="character">
+                    </div>
+
+                </div>
+                <!-- left3 -->
+            </div>
+            <!-- left2 -->
+        </div>
+        <!-- left1 -->
+        <!-- ----------------- 좌측 끝 ----------------- -->
+
+        <div id="right1" class="box1">
+            <div id="right2" class="box2">
+                <div id="nickname">
+                    {{#name}}
+                        {{name}}님의 홈페이지입니다.
+                    {{/name}}
+                </div>
+                <div id="openBtnDiv" OnClick="main_go()" style="cursor:pointer;">
+                    <img id="helloImg" src="/images/helloworld2.png" alt="헬로월드">
+                    <span>메인으로</span>
+                </div>
+                <div id="right3" class="box3">
+                    <div id="title">
+                        최근게시물
+                    </div>
+
+                    <div id="newBox">
+                        <table id="newTable">
+                            <tr>
+                                <td id="newDiary" class="update">다이어리</td>
+
+                            </tr>
+                            <tr>
+                                <td id="newBoard" class="update">게시판</td>
+
+                            </tr>
+                            <tr>
+                                <td id="newPhoto" class="update">사진첩</td>
+
+                            </tr>
+                            <tr>
+                                <td id="newGuestBook" class="update">방명록</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <img id="homeimage" src="/images/homeimage.jpeg" alt="homeimage">
+
+                </div>
+                <!-- right3 -->
+            </div>
+            <!-- right2 -->
+        </div>
+        <!-- right1 -->
+
+        {{>common/sideBar}}
+    </div>
+    <!-- wrap1 -->
+</div>
+<!-- wrap -->
+</body>
+</html>
