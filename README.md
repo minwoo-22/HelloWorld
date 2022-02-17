@@ -13,27 +13,16 @@
 <p align=center>
 <img src="https://user-images.githubusercontent.com/81568304/154448782-701534f6-ecb1-4d68-80b7-e93d0f70e5e3.png" width=300 height=500 display:inline>
 </p>
-<p align=center>
- 
-**시작 페이지**  
-</p>
 
 
 
 <p align=center>
 <img src="https://user-images.githubusercontent.com/81568304/154448815-6e60c030-cba3-46e4-bb72-ee59e7373f18.png" width=500 height=400>
 </p>
-<p align=center>
- 
-**로그인 페이지**  
-</p>
- 
+
  
  
 <p align=center>
 <img src="https://user-images.githubusercontent.com/81568304/154448845-7b114f9d-96d6-4e68-99ae-a66398ee97d0.png" width=500 height=400>
 </p>
-<p align=center>
- 
-**홈페이지 메인**  
-</p>
+
