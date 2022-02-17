@@ -1,23 +1,12 @@
-/**
- * 
- */
-//-닉네임 체크용
-const nickChkCondition = {'min' : 2, 'max' : 10};
-let validityNick = new RegExp('^[a-zA-Z0-9가-힣\x20]{' + nickChkCondition['min'] + ',' + nickChkCondition['max'] +'}$');
-
 function findPeople_send() {
 	let fr = document.frm;
-	if (fr.nickname.value.trim() == "") {
+	if (fr.name.value.trim() == "") {
 		alert("검색할 닉네임을 입력해주세요.");
-		fr.nickname.value = "";
-		fr.nickname.focus();
+		fr.name.value = "";
+		fr.name.focus();
 		return false;
 	}
-	if (!validityNick.test(fr.nickname.value)) {
-		alert("닉네임은 한글, 숫자, 영문 대/소문자만 사용 가능합니다.\n(최소: 2 최대: 10)");
-		fr.nickname.focus();
-		return false;
-	}
+
 	$.ajax({
 		url: "findPeople_go",
 		type: "get",
