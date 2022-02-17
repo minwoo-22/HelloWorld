@@ -27,19 +27,28 @@
 	 	position: relative; left: 67px; top: 50px;
 	}
 	#head_img {
-	 	position: relative; left:60px; top: -10px;
+	 	position: relative; left:50px; top: -10px;
 	 	width: 150px;
 	 	height: 150px;
 	}
     #loginBtn {
         transform: translateX(-17%);
-        border: 1px solid black;
         position: relative;
         padding-left: 90px;
     }
     #google_btn {
         width: 200px;
         height: 50px;
+        position: relative;
+    }
+    #naver_btn {
+        width: 200px;
+        height: 43px;
+        position: relative;
+    }
+    #kakao_btn {
+        width: 200px;
+        height: 43px;
         position: relative;
     }
 </style>
@@ -56,6 +65,9 @@
             <div id="loginBtn">
                 <a href="/oauth2/authorization/google"> <img id="google_btn" src="/images/google_btn_signin1.png" onmouseover="this.src='/images/google_btn_signin2.png'"
                      onmouseout="this.src='/images/google_btn_signin1.png'"> </a>
+                <a href="/oauth2/authorization/naver"> <img id="naver_btn" src="/images/naver_btn_signin1.png" onmouseover="this.src='/images/naver_btn_signin2.png'"
+                    onmouseout="this.src='/images/naver_btn_signin1.png'"> </a>
+                <a href="/oauth2/authorization/kakao"><img id="kakao_btn" src="/images/kakao_btn_signin1.png"></a>
             </div>
         </div>
     </div>
