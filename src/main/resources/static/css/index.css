@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body {  /* body 태그 부분 */
+    background-color: #EEEEEE;
+}
+#head_img {  /* 싸이월드 로고 부분 */
+    position: relative; left: 8px;
+    width: 60px;
+    top: 15px;
+}
+h1 {  /* HELLO WORLD 부분 */
+    position: relative; left: 8px;
+    font-size: 40px;
+    display: inline;
+    font-family: "Nanum Gothic";
+ }
+#top {  /* 싸이월드 로고 + HELLO WORLD */
+    position: relative;
+    left: 74%;
+    transform: translate(-40%);
+}
+#wrap {  /* top 바로 밑에 내용 부분 */
+    position: relative;
+    left:55%;
+    transform: translate(-20%);
+}
+#today {  /* today 박스 부분 */
+    border: none;
+    width: 300px;
+    padding: 20px;
+    background-color: #0096c6;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+#wrap>p>span {
+    color: orange;
+}
+#hi { /* 헬로월드 미니홈피에 오신것을 환영합니다. */
+    position: relative;
+    left: 10px;
+}
+#kimhello {  /* 김헬로 박스 부분 */
+    background-color: white;
+    width: 340px;
+    height: 200px;
+    border-radius: 15px;
+}
+#character1 {  /* 캐릭터 이미지 */
+    position: relative;
+    width: 80px;
+    left: 10px;
+    top: 10px;
+    border-radius: 20px;
+}
+#kim {  /* 김헬로 */
+    position: relative;
+    left: 20px;
+    top: -80px;
+    font-weight: bold;
+}
+#content1 {  /* 우리 그 때 헬로월드 여기는 여러분의 헬로월드입니다. */
+    position: relative;
+    left: 100px;
+    top: -80px;
+}
+#content2 {  /* Today is.. */
+    position: relative;
+    left: 15px;
+    top: -60px;
+}
+#sun {
+    width: 30px;
+}
+#content2 span {
+    color: #0096c6;
+    font-weight: bold;
+}
