@@ -25,7 +25,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()  // URL별 권한 관리를 설정하는 옵션의 시작점
-                .antMatchers("/customer/**").authenticated() // customer로 접근하려면 인증받아야됨
                 .antMatchers("/api/**").hasRole(Role.USER.name())
                 .anyRequest().permitAll() // 나머지는 모두 마음대로 접근 가능하다
 //                .anyRequest().authenticated()
