@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-public class IndexController {
+public class pageController {
     @GetMapping("/")
     public String index() {
         return "index";
