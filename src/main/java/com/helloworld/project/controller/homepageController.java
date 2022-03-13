@@ -17,4 +17,15 @@ public class homepageController {
 
         return "/homepage/homeMain";
     }
+
+    @RequestMapping("/profile")
+    public String profile(Model model, @LoginUser SessionUser user) {
+        if (user != null) {
+            model.addAttribute("name", user.getName());
+        }
+
+        return "/homepage/profile";
+    }
+
+
 }
